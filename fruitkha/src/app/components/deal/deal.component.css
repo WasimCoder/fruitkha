@@ -1,0 +1,125 @@
+.deal-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    /* border: solid 1px black; */
+    background-color: var(--light);
+}
+/* .deal-container div{
+    height: 500px;
+    width: 50%;
+    border: solid 1px black;
+
+} */
+.deal-container .deal-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deal-container .deal-image img{
+    position: relative;
+    width: 70%;
+}
+.deal-container .deal-image .deal-offer{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    left: 180px;
+    background: var(--orange);
+    box-sizing: border-box;
+    border: solid 4px var(--yellow);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.deal-container .deal-image .deal-offer p{
+    color: var(--dark-blue);
+ font-size: 30px;
+}
+.deal-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    height: 100%;
+}
+.deal-details div{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left; */
+    /* border: solid 1px black; */
+    width: 100%;
+}
+.deal-details .deal-det1 p:nth-child(1){
+ color: var(--dark-blue);
+ font-size: 48px;
+ font-weight: 600;
+}
+.deal-det1{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.deal-det2{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    font-size: 16px;
+}
+.time-stamp{
+    padding-top: 20px;
+    display: flex;
+    max-width: 60%;
+    height: 100px;
+    justify-content: space-evenly;
+}
+.time-stamp div{
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    box-sizing: border-box;
+    border: solid 5px var(--orange);
+}
+.time-stamp p{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.deal-cart{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deal-cart button{
+    height: 40px;
+    width: 140px;
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+.deal-cart button:hover{
+    color: var(--orange);
+    background-color: var(--dark-blue);
+}

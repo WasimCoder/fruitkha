@@ -1,0 +1,13 @@
+<app-load [class.isLoaded]="loaded" ></app-load>
+<div class="home-container">
+    <app-header></app-header>
+    <app-display></app-display>
+    <app-products></app-products>
+    <app-deal></app-deal>
+    <app-review [content]="content"></app-review>
+    <app-video></app-video>
+    <app-news></app-news>
+    <app-logo [logoContent]="logoContent"></app-logo>
+    <app-footer></app-footer>
+</div>
+<router-outlet></router-outlet>

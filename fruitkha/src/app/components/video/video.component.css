@@ -1,0 +1,140 @@
+.video-container{
+    height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* .video-container div{
+    /* border: solid 1px black;
+} */
+.video-container .video-box{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.video-container .video-box .fruit-image-box img{
+    height: 500px;
+    width: 500px;
+    border-radius: 10% 1% 10% 1%;
+}
+.video-container .video-box .fruit-image-box{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 1% 10% 1%;
+}
+.video-container .video-box .play-button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--orange);
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: inset 0px 0px 10px var(--yellow);
+    transition: all 0.2s linear;
+}
+.video-container .video-box .play-button:hover{
+    box-shadow: inset 0px 0px 2px var(--light);
+    background:var(--dark-blue);
+    
+}
+.video-container .video-box .play-button button{
+    background: none;
+    border: none;
+    font-size: 30px;
+    height: 100px;
+    width: 100px;
+    margin-left: 6px;
+    transition: all 0.2s linear;
+}
+.video-container .video-box .play-button button:hover{
+    color: var(--yellow);
+}
+.video-container .video-content-box{
+    display: grid;
+    place-items: revert;
+    place-content: center;
+    grid-template-rows: 20px 80px 223px;
+}
+.video-container .video-content-box .video-heading p{
+    font-size: 60px
+}
+.video-container .video-content-box .video-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-container .video-content-box .video-content p{
+    font-size: 20px;
+}
+.video-container .video-content-box button{
+    width: 150px;
+    height: 60px;
+    background: var(--orange);
+    box-shadow: inset 0px 0px 10px var(--yellow);
+    color: var(--dark-blue);
+    margin-left: 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    transition: all 0.2s linear;
+}
+.video-container .video-content-box button:hover{
+    box-shadow: inset 0px 0px 2px var(--light);
+    background-color: var(--dark-blue);
+    color: var(--orange);
+}
+.banner-container{
+    position: relative;
+    background-image: url('/assets/images/banner.jpg');
+    height: 494px;
+}
+.banner-content{
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    height: 300px;
+    width: 450px;
+}
+.banner-container p:nth-child(1){
+    font-size: 40px;
+    color: var(--dark-blue);
+}
+.banner-container p:nth-child(2){
+    width: 30px;
+    height: 30px;
+    
+}
+.banner-container p:nth-child(2), .banner-container p:nth-child(3){
+    font-size: 30px;
+    display: inline-block;
+}
+.banner-container p:nth-child(3) span{
+    font-size: 52px;
+    margin-left: 40px;
+    color: var(--orange);
+}
+.banner-container button{
+    margin-top: 20px;
+    display: block;
+    border-radius: 25px;
+    width: 180px;
+    height: 60px;
+    color: var(--dark-blue);
+    background: var(--orange);
+    border: none;
+    font-size: 16px;
+    transition: 0.2s all linear;
+}
+
+.banner-container button:hover{
+    color: var(--light);
+    background: var(--dark-blue);
+}

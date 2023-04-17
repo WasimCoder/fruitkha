@@ -1,0 +1,40 @@
+<div class="news-container">
+    <div class="news-content">
+        <div class="c1" ><span style="color: var(--orange)">Our </span> news</div>
+        <div class="c2">these are some of the best news to choose from. please choose one news listed below and give it a try</div>
+    </div>
+    <div class="news-list">
+        <div class="newss">
+            <div *ngFor="let news of newsDetails" class="news">
+               <div class="news-image">
+                <img [src]="news.newsImg" alt="">
+               </div>
+               <div class="news-text">
+               <div class="news-topic">
+                <p>{{news.newsTopic}}</p>
+               </div>
+               <div class="news-author-details">
+               <div class="news-author">
+                <i class="fas far fa-user-circle"></i>
+                <p>{{news.newsAuthor}}</p>
+               </div>
+               <div class="news-date">
+                <i class="fas fas fa-calendar-times"></i>
+                <p>{{news.newsDate}}</p>
+               </div>
+            </div>
+                <div class="news-content">
+                    <p>{{news.newsContent}}</p>
+                </div>
+                <div class="news-link">
+                    <a href="#">know more ></a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="more-news-button">
+    <button>More News</button>
+</div>
+</div>

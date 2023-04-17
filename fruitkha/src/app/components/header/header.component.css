@@ -1,0 +1,113 @@
+
+.header-container{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 10 ;
+    width: 100%;
+    height: 110px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    place-items: center;
+    place-content: center;
+    transition: background-color 0.2s, height 0.2s;
+}
+.header-logo, .header-menu{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hovering-block{
+    position: relative;
+    display: inline-block;
+    transition: all 1s linear;
+}
+.home-list{
+    position: absolute;
+    background-color: aliceblue;
+    display: none;
+    opacity: 0;
+    height: 130px;
+    width: 140px;
+    transition: all 3s;
+}
+.hovering-block:hover .home-list, .home-button:hover .home-list:hover{
+    display: block;
+    opacity: 1;
+}
+.home-list a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    line-height: 1.5;
+    transition: var(--color);
+}
+.home-list a:hover{
+    color: var(--orange);
+}
+.header-logo img{
+    width: 140px;
+}
+.header-menu{
+    width: 60%;
+    justify-content: space-around;
+}
+.header-menu button{
+    color: var(--white);
+    border: none;
+    font-size: 14px;
+    background: none;
+    transition: var(--color);
+}
+
+
+.header-menu button:hover{
+    color: var(--orange);
+}
+.header-menu button:nth-child(1){
+    color: var(--orange);
+    transition: var(--color);
+}
+.header-menu button:nth-child(1):hover{
+    color: var(--white);
+    /* z-index: 10;
+    display: block; */
+}
+
+.header-change{
+    position: fixed;
+    background-color: var(--dark-blue);
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.header-end{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-end button{
+    font-size: 14px;
+    background: none;
+    border: none;
+}
+.header-end button i{
+    color: var(--white);
+}
+/* .home-button{
+    /* position: relative; 
+} */
+
+/* .home-button:hover .home-list{
+    
+} */
+
+
+

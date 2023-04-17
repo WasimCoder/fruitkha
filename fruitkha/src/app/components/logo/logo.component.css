@@ -1,0 +1,15 @@
+.logo-container{
+    z-index: 20;
+    height: 200px;
+    background: var(--light);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+}
+.logo-image{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}

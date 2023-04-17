@@ -1,0 +1,81 @@
+.about-us{
+    height: 500px;
+    background: #40535c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-us h3{
+    font-size: 20px;
+    letter-spacing: 10px;
+    word-spacing: 3px;
+    color: var(--orange);
+    text-shadow: inset 0px 6px 20px rgb(255, 255, 255);
+}
+.about-us h1{
+    font-size: 50px;
+    color: var(--white);
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.50);
+    -webkit-text-stroke: solid 0.5px black;
+}
+.shop-container{
+    width: 100%;
+    height: 1200px;
+    background: var(--white);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shop-list{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    height: 600px;
+    /* border: solid 1px black; */
+    
+}
+.shop-list .shops{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: solid 3px blue; */
+    /* width: 90%; */
+
+}
+.shop-list .shop{
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 30px; */
+    height: 450px;
+    width: 350px;
+    border-radius: 10px;
+    /* border: solid 1px black; */
+    color: black;
+    margin-bottom: 20px;
+    transition: box-shadow 0.4s;
+}
+.shop-list .shop:hover{
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 50%);
+}
+.shop-list img{
+    width: 60%;
+}
+.shop-list .shop button{
+    height: 40px;
+    width: 140px;
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+.shop-list .shop button:hover{
+    color: var(--orange);
+    background-color: var(--dark-blue);
+}

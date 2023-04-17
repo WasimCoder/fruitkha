@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="about-us">
+    <h3>CHECKOUT OUR NEWS!</h3>
+    <h1>TODAY'S DIGEST</h1>
+</div>
+<div class="news-list">
+    <div class="newss">
+        <div *ngFor="let news of newsDetails" class="news">
+            <div class="news-image">
+             <img [src]="news.newsImg" alt="">
+            </div>
+            <div class="news-text">
+            <div class="news-topic">
+             <p>{{news.newsTopic}}</p>
+            </div>
+            <div class="news-author-details">
+            <div class="news-author">
+             <i class="fas far fa-user-circle"></i>
+             <p>{{news.newsAuthor}}</p>
+            </div>
+            <div class="news-date">
+             <i class="fas fas fa-calendar-times"></i>
+             <p>{{news.newsDate}}</p>
+            </div>
+         </div>
+             <div class="news-content">
+                 <p>{{news.newsContent}}</p>
+             </div>
+             <div class="news-link">
+                 <a href="#">know more ></a>
+             </div>
+         </div>
+
+         </div>
+    </div>
+</div>
+<div class="news-buttons">
+    <button class="fas fa-angle-left"></button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button class=" fas fa-angle-right"></button>
+</div>
+<app-logo [logoContent]="logoContent" ></app-logo>
+<app-footer></app-footer>

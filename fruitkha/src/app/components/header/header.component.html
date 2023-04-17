@@ -1,0 +1,29 @@
+<header [class.header-change]="header_variable" class="header-container">
+    <div class="header-logo">
+        <img [routerLink]="nav[0].home" src="/assets/images/logo.png" alt="">
+    </div>
+    <div class="header-menu">     
+        <div class="hovering-block">
+            <button class="home-button"[routerLink]="nav[0].home">Home</button>
+            <div class="home-list">
+                <a href="#">Wasim</a>
+                <a href="#">Wasim</a>
+                <a href="#">Wasim</a>
+            </div>
+    </div>
+        <button class="about-button" [routerLink]="nav[1].about" >About</button>
+        <button class="news-button"[routerLink]="nav[2].news">News</button>
+        <button class="contact-button"[routerLink]="nav[3].contact">Contact</button>
+        <button class="shop-button" [routerLink]="nav[4].shop" >Shop</button>
+        <button class="cart-button" [routerLink]="nav[5].cart" >Cart</button>
+    </div>
+    <div  class="header-end">
+        <button>
+            <i [routerLink]="nav[5].cart" class="fas fa-shopping-cart"></i>
+        </button>
+        <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+</header>
+<router-outlet></router-outlet>

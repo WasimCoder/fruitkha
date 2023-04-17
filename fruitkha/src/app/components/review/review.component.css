@@ -1,0 +1,130 @@
+.review-container{
+    position: relative;
+    margin: 30px auto;
+    text-align: center;
+    display: grid;
+    /* grid-row: auto; */
+    grid-template-rows: 150px 30px 20px 100px;
+    place-items: center;
+    place-content: center;
+    height: 400px;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 30%);
+}
+.review-image, .review-name,.review-work,.review-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px #000; */
+}
+.review-container .review-image img{
+    /* height: 200px; */
+    display: none;
+}
+.review-container .review-image img.image-active{
+    display: block;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+
+}
+.review-container .review-name h3{
+    /* height: 100px; */
+    display: none;
+}
+.review-container .review-name h3.name-active{
+    display: block;
+}
+.review-container .review-work h3{
+    /* height: 100px; */
+    display: none;
+}
+.review-container .review-work h3.work-active{
+    margin-top: 20px;
+    font-size: 20px;
+    display: block;
+}
+.review-container .review-content p{
+    /* height: 100px; */
+    display: none;
+}
+.review-container .review-content p.para-active{
+    display: block;
+}
+/*image fade effect after transition*/
+.fade{
+    animation: fade 3s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*Dots and containers*/
+.review-dot-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.6s ease linear;
+    opacity: 0.5;
+}
+.active, .dot:hover{
+    opacity: 1;
+}
+
+
+.btn-review{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    background: 0;
+    border: 0;
+    cursor: pointer;
+}
+.btn-prev{
+    left: 0;
+}
+.btn-next{
+    right: 0;
+}
+.icon-review{
+    opacity: 0.5;
+    transition: all 0.15s ease;
+}
+.icon-review:hover{
+    /* color: #fff; */
+    opacity: 0.9;
+}
+.icon-review:active{
+    /* color: #fff; */
+    opacity: 0.5;
+}
+.icon-prev{
+    font-size: 35px;
+}

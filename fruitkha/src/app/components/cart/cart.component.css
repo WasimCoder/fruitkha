@@ -1,0 +1,113 @@
+.about-us{
+    height: 500px;
+    background: #40535c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-us h3{
+    font-size: 20px;
+    letter-spacing: 10px;
+    word-spacing: 3px;
+    color: var(--orange);
+    text-shadow: inset 0px 6px 20px rgb(255, 255, 255);
+}
+.about-us h1{
+    font-size: 50px;
+    color: var(--white);
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.50);
+    -webkit-text-stroke: solid 0.5px black;
+}
+.cart-table-container{
+    display: flex;
+    padding: 60px;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+table.cart-table{
+border: 1px solid white;
+}
+thead{
+border-bottom: 1px solid gainsboro;
+border-left: 1px solid gainsboro;
+
+}
+thead.cart-table-head tr{
+    background-color:rgb(248, 248, 248);
+} 
+tr.table-head-row th {
+    border: 1px solid #efefef;
+    padding: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cart-table tbody tr td{
+border: 1px solid #efefef;
+padding: 15px;
+font-weight: 500;
+text-align: center;
+}
+.cart-table tbody tr td img{
+    max-width: 50px;
+    width: 100%;
+}
+.cart-table tbody tr td input{
+    height: 40px;
+    width: 60px;
+}
+thead.total-table-head tr{
+    background-color:rgb(248, 248, 248);
+}
+tr.total-table-row th{
+    border: 1px solid #efefef;
+    padding: 15px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.total-table tbody tr td{
+    border: 1px solid #efefef;
+    padding: 15px;
+    font-weight: 500;
+    text-align: left;
+}
+table.total-table{
+    width: 400px;
+}
+/* .total-table tbody tr, .total-table thead tr{
+
+} */
+.cart-buttons {
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cart-buttons button, .cart-coupons button{
+    border: none;
+    border-radius: 25px;
+    background: var(--orange);
+    color: var(--white);
+    height: 35px;
+    width: 120px;
+    transition: 0.3s all linear;
+}
+.cart-buttons button:hover, .cart-coupons button:hover{
+    color: var(--orange);
+    background: var(--dark-blue);
+}
+.cart-coupons {
+    padding: 20px 0px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    justify-content: space-around;
+}
+.cart-coupons input{
+    height: 45px;
+    width: 300px;
+}

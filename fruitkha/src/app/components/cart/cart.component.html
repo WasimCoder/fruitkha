@@ -1,0 +1,80 @@
+<app-header></app-header>
+<div class="about-us">
+    <h3>Hello there!</h3>
+    <h1>CART</h1>
+</div>
+<div class="cart-table-container">
+    <table class="cart-table">
+        <thead class="cart-table-head">
+            <tr class="table-head-row">
+                <th class="product-remove"></th>
+                <th class="product-image">Product Image</th>
+                <th class="product-name">Name</th>
+                <th class="product-price">Price</th>
+                <th class="product-quantity">Quantity</th>
+                <th class="product-total">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="product-remove"><a href="#"><i class="fas fa-window-close"></i></a></td>
+                <td class="product-image"><img src="/assets/images/strawberry.jpg" alt=""></td>
+                <td class="product-name"><p>Strawberry</p></td>
+                <td class="product-price"><p>60$</p></td>
+                <td class="product-quantity"><input type="number"></td>
+                <td class="product-total"><p>60$</p></td>
+            </tr>
+            <tr>
+                <td class="product-remove"><a href="#"><i class=" fas fa-window-close"></i></a></td>
+                <td class="product-image"><img src="/assets/images/strawberry.jpg" alt=""></td>
+                <td class="product-name"><p>Strawberry</p></td>
+                <td class="product-price"><p>60$</p></td>
+                <td class="product-quantity"><input type="number"></td>
+                <td class="product-total"><p>60$</p></td>
+            </tr>
+            <tr>
+                <td class="product-remove"><a href="#"><i class="fas fa-window-close"></i></a></td>
+                <td class="product-image"><img src="/assets/images/strawberry.jpg" alt=""></td>
+                <td class="product-name"><p>Strawberry</p></td>
+                <td class="product-price"><p>60$</p></td>
+                <td class="product-quantity"><input type="number"></td>
+                <td class="product-total"><p>60$</p></td>
+            </tr>  
+        </tbody>
+    </table>
+        <div class="total-table-container">
+        <table class="total-table">
+            <thead class="total-table-head">
+                <tr class="total-table-row">
+                    <th class="product-name">Particulars</th>
+                    <th class="product-amount">Amount</th>
+                </tr>
+            </thead>
+            <tbody class="total-table-body">
+                <tr class="total-table-row">
+                    <td class="product-subtotal">Product Subtotal:</td>
+                    <td class="product-amount">400$</td>
+                </tr>
+                <tr class="total-table-row">
+                    <td class="product-shipping">Shipping Cost:</td>
+                    <td class="product-amount">20$</td>
+                </tr>
+                <tr class="total-table-row">
+                    <td class="product-total">Total Amount</td>
+                    <td class="product-amount">420$</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-buttons">
+            <button>update cart</button>
+            <button>checkout</button>
+        </div>
+        <div class="cart-coupons">
+            <h5>Apply Coupon</h5>
+            <input type="text" placeholder="Apply Here">
+            <button>apply</button>
+        </div>
+    </div>
+</div>
+<app-logo [logoContent]="logoContent" ></app-logo>
+<app-footer></app-footer>

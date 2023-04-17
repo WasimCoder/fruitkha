@@ -1,0 +1,19 @@
+.home-container{
+    animation: show 1s linear;
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.homeload{
+    display: block;
+}
+.isLoaded{
+    transition: 3s all linear;
+    display: none;
+    opacity: 0;
+}

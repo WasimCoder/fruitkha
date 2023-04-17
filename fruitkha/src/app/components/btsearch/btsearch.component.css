@@ -1,0 +1,22 @@
+.shop-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* align-items: baseline; */
+
+}
+.shop-buttons button{
+    padding: 12px 30px;
+    margin: 6px 10px;
+    font-size: 20px;
+    color: var(--white);
+    background: var(--orange);
+    border-radius: 25px;
+    border: none;
+    transition: 0.3s all linear;
+}
+.shop-buttons button:hover{
+    color: var(--orange);
+    background: var(--dark-blue);
+}

@@ -1,0 +1,91 @@
+/*Product Container*/
+.product-container{
+    height: 900px;
+    width: 100%;
+    color: var(--white);
+}
+.product-container .product-content{
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+}
+.product-container .product-content .c1{
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+.product-container .product-content .c1::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 3px solid var(--dark-blue);
+}
+.product-container.product-content .c2{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 40px;
+
+}
+.product-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    /* border: solid 1px black; */
+    
+}
+.product-list .products{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: solid 3px blue; */
+    /* width: 90%; */
+
+}
+.product-list .product{
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 30px; */
+    height: 450px;
+    width: 350px;
+    border-radius: 10px;
+    /* border: solid 1px black; */
+    color: black;
+    transition: box-shadow 0.4s;
+    padding-bottom: 16px;
+}
+.product-list .product:hover{
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 50%);
+}
+.product-list img{
+    width: 60%;
+}
+.product-list .product button{
+    height: 40px;
+    width: 140px;
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+.product-list .product button:hover{
+    color: var(--orange);
+    background-color: var(--dark-blue);
+}

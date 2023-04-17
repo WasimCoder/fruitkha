@@ -1,0 +1,8 @@
+[
+    {"home" :"/home"},
+    {"about" :"/about"},
+    {"news" :"/news"},
+    {"contact" :"/contact"},
+    {"shop" :"/shop"},
+    {"cart" :"/cart"}
+]

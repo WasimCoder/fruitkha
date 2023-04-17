@@ -1,0 +1,150 @@
+/*news Container*/
+.news-container{
+    height: 900px;
+    width: 100%;
+    color: var(--white);
+}
+.news-container .news-content{
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    /* margin-top: 20px; */
+}
+.news-container .news-content .c1{
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+.news-container .news-content .c1::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 3px solid var(--dark-blue);
+}
+.news-container.news-content .c2{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 40px;
+
+}
+.c2{
+    margin-top: 40px;
+
+}
+.news-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    /* border: solid 1px black; */
+    
+}
+.news-list .newss{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: solid 3px blue; */
+    /* width: 90%; */
+
+}
+/* .news div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.news-list .news{
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+    display: grid;
+    grid-template-rows: 184px 266px;
+    /* margin-top: 30px; */
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    /* padding: 0 5px; */
+    box-sizing: border-box;
+    /* border: solid 1px black; */
+    color: black;
+    transition: box-shadow 0.4s;
+}
+.news-text{
+    padding: 20px;
+    border: solid 4px var(--white);
+    display: grid;
+    grid-template-rows: 60px 40px 140px 26px;
+    height: 318px;
+    border-radius: 15px;
+
+
+}
+.news-text .news-author-details{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .news-text .news-author-details div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid 1px black; 
+} */
+/* .news-text .news-author , .news-date {
+     display: flex;
+    flex-direction: column; 
+    justify-content:left;
+    align-items: center; 
+} */
+.news-author ,  .news-date {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.news-text .news-topic p{
+    font-size: 20px;
+}
+.news a{
+    text-decoration: none;
+    color: black;
+}
+.more-news-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news-container button{
+    height: 40px;
+    width: 140px;
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+.news-container button:hover{
+    color: var(--orange);
+    background-color: var(--dark-blue);
+}
+
+.news-list .news:hover{
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 50%);
+}
+.news-list img{
+    width: 100%;
+    padding: 0px;
+    border-radius: 15px 15px 0 0;
+}

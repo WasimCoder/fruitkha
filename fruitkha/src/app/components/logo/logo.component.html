@@ -1,0 +1,7 @@
+
+<div *ngIf="logoContent && logoContent.length > 0"  class="logo-container">
+    <div class="logo-image">
+        <img *ngFor="let logo of logoContent"
+         [src]="logo.img" alt=""
+         >
+    </div>

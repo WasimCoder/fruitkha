@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="about-us">
+    <h3>We Sell Fresh Fruits</h3>
+    <h1>WELCOME TO OUR SHOP!</h1>
+</div>
+<div class="shop-container">
+<app-btsearch (searchTextChanged)="onSearchTextEntered($event)"></app-btsearch>
+    <div class="shop-list">
+        <div class="shops">
+            <!--*ngIf="(searchText === '*' || shop.prodName.toLowerCase().includes(searchText));"-->
+            <div *ngFor="let shop of productList">
+                <div *ngIf="(searchText === '*' || shop.prodName.toLowerCase().includes(searchText));" class="shop">
+                <img [src]="shop.prodImage"alt="">
+                <h2>{{shop.prodName}}</h2>
+                <small>Per Kg</small>
+                <h1>{{shop.prodPrice}}</h1>
+                <button><i class="fas fa-shopping-cart" ></i> add to cart</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

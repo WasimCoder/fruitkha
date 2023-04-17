@@ -1,0 +1,17 @@
+<div class="product-container">
+    <div class="product-content">
+        <div class="c1" ><span class="orange">Our </span> Products</div>
+        <div class="c2">these are some of the best products to choose from. please choose one of the fruits listed below</div>
+    </div>
+    <div class="product-list">
+        <div class="products">
+            <div *ngFor="let product of productList" class="product">
+                <img [src]="product.prodImage"alt="">
+                <h2>{{product.prodName}}</h2>
+                <small>Per Kg</small>
+                <h1>{{product.prodPrice}}</h1>
+                <button><i class="fas fa-shopping-cart" ></i> add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>
